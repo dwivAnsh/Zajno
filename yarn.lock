@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@darkroom.engineering/tempus@^0.0.46":
+  version "0.0.46"
+  resolved "https://registry.npmjs.org/@darkroom.engineering/tempus/-/tempus-0.0.46.tgz"
+  integrity sha512-s5vav3KMHYezvUCl4ee5epg0oimF6M8C9gAaKxFnFaTvX2q3ywFDryIv6XLd0mRFUt3S1uHDJqKaiEcs2ZVSvw==
+
 "@esbuild/linux-loong64@0.14.54":
   version "0.14.54"
   resolved "https://registry.npmjs.org/@esbuild/linux-loong64/-/linux-loong64-0.14.54.tgz"
@@ -144,6 +149,11 @@ function-bind@^1.1.1:
   resolved "https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz"
   integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
 
+gsap@^3.13.0:
+  version "3.13.0"
+  resolved "https://registry.npmjs.org/gsap/-/gsap-3.13.0.tgz"
+  integrity sha512-QL7MJ2WMjm1PHWsoFrAQH/J8wUeqZvMtHO58qdekHpCfhvhSL4gSiz6vJf5EeMP0LOn3ZCprL2ki/gjED8ghVw==
+
 has@^1.0.3:
   version "1.0.3"
   resolved "https://registry.npmjs.org/has/-/has-1.0.3.tgz"
@@ -158,10 +168,24 @@ is-core-module@^2.9.0:
   dependencies:
     has "^1.0.3"
 
+lenis@1.1.9:
+  version "1.1.9"
+  resolved "https://registry.npmjs.org/lenis/-/lenis-1.1.9.tgz"
+  integrity sha512-xU2UU1J8mJCiWBSfiMWsC/kPbQMIadSsJiEu3mVqptXGnwo/FUnfp8xCyiOJEvBwzqx4XDdB6TKYFn83y871vA==
+  dependencies:
+    "@darkroom.engineering/tempus" "^0.0.46"
+
 lil-gui@^0.16.1:
   version "0.16.1"
   resolved "https://registry.npmjs.org/lil-gui/-/lil-gui-0.16.1.tgz"
   integrity sha512-6wnnfBvQxJYRhdLyIA+w5b8utwbuVxNmtpTXElm36OSgHa8lyKp00Xz/4AEx3kvodT0AJYgbfadCFWAM0Q8DgQ==
+
+locomotive-scroll@^5.0.0-beta.21:
+  version "5.0.0-beta.21"
+  resolved "https://registry.npmjs.org/locomotive-scroll/-/locomotive-scroll-5.0.0-beta.21.tgz"
+  integrity sha512-UrvuBVxI9rX7b0SkLzZwlzUqZ22Oybj6c6jBflqvH6bdQEb+OcsOpQg65cFJPY0IYBNGnaHkLHr/EDDW6y6scQ==
+  dependencies:
+    lenis "1.1.9"
 
 nanoid@^3.3.4:
   version "3.3.4"
