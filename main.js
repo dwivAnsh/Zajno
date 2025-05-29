@@ -70,6 +70,7 @@ function updatePlanesPosition() {
   });
 }
 
+
 function animate() {
   requestAnimationFrame(animate);
   updatePlanesPosition();
@@ -78,7 +79,7 @@ function animate() {
 animate();
 
 window.addEventListener("resize", () => {
-  const newFov = Math.atan(window.innerHeight / 2 / 5) * 2 * (180 / Math.PI);
+  const newFov = Math.atan((window.innerHeight / 2) / distance) * 2 * (180 / Math.PI);
   camera.fov = newFov;
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();

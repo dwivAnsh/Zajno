@@ -1,4 +1,3 @@
-
 varying vec2 vUv;
 uniform sampler2D uTexture;
 uniform float uHover;
@@ -11,8 +10,11 @@ void main(){
   float effect = smoothstep(0.4, 0.0, distance);
   vec2 distortion = vec2(0.03) * effect;
 
-  vec4 color = texture2D(uTexture, vUv + distortion*uHover);
-  gl_FragColor = color;
+  vec4 texcolor = texture2D(uTexture, vUv + distortion*uHover);
+
+  float gray = dot(texcolor.rgb, vec3(0.299, 0.587, 0.114));
+  vec4 bwColor = vec4(gray, gray, gray, texcolor.a);
+  gl_FragColor = mix(bwColor, texcolor, uHover);
 }
 
 
